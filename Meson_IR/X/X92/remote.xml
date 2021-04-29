@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains the mapping of remote keys to actions within Kodi.                -->
+<!--                                                                                      -->
+<!-- The format is:                                                                       -->
+<!--  <window>                                                                            -->
+<!--    <device>                                                                          -->
+<!--      <button>action</button>                                                         -->
+<!--    </device>                                                                         -->
+<!--  </window>                                                                           -->
+<!--                                                                                      -->
+<!-- The <global> section is a fall through - they will only be used if the button is     -->
+<!-- not used in the current window's section.                                            -->
+<!--                                                                                      -->
+<!-- Actions can be built-in functions.                                                   -->
+<!--  eg <B>ActivateWindow(Music)</B>                                                     -->
+<!-- would automatically go to Music on the press of the B button.                        -->
+<!--                                                                                      -->
+<!-- An empty action removes the corresponding mapping from default and parent keymaps.   -->
+<!-- This is different from a "noop" action, which disables a button.                     -->
+<!--                                                                                      -->
+<!-- More documentation on keymaps can be found on http://kodi.wiki/view/keymaps          -->
+<keymap>
+  <global>
+    <remote>
+	  <start>ActivateWindow(Home)</start><!--  new, doesn't work-->
+	  <star>ActivateWindow(Favourites)</star>
+    </remote>
+  </global>
+  <Home>
+    <remote>
+	  <info>ActivateWindow(Settings)</info><!--  new -->
+	  <menu>ActivateWindow(TVChannels)</menu><!--  new -->
+    </remote>
+  </Home>
+  <FullscreenVideo>
+    <remote>
+      <title>PlayerProcessInfo</title><!-- doesn't work -->
+      <info>Info</info>
+	  <guide>ActivateWindow(VideoBookmarks)</guide> <!--  new -->
+    </remote>
+  </FullscreenVideo>
+  <Visualisation>
+    <remote>
+      <guide>ActivateWindow(TVGuide)</guide>
+    </remote>
+  </Visualisation>
+  <FullscreenLiveTV>
+    <remote>
+	  <menu>ActivateWindow(PVROSDChannels)</menu><!--  new -->
+	  <guide>ActivateWindow(PVROSDGuide)</guide><!--  new -->
+	  <start>ActivateWindow(Home)</start><!--  new, doesn't work-->
+	  <star>ActivateWindow(Favourites)</star>
+    </remote>
+  </FullscreenLiveTV>
+</keymap>

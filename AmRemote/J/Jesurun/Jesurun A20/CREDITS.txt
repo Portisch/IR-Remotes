@@ -1,0 +1,5 @@
+This package was contributed to the Repository for Amlogic and Meson IR Remote Controllers on 
+
+11/05/2020 by mark1978
+
+under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported Licsense.

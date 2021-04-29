@@ -1,0 +1,5 @@
+-Copy "m9cmax" file into "/storage/.config/rc_keymaps/"
+-Copy "backspace.xml" file into "/storage/.kodi/userdata/keymaps/"
+-Copy "rc_maps.cfg" file into "/storage/.config/"
+-Connect via SSH to your device and type the following command: ir-keytable -a /storage/.config/rc_maps.cfg -s rc0
+-Reboot your device.

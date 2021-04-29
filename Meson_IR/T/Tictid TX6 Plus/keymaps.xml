@@ -1,0 +1,64 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- This file contains the mapping of keyboard keys to actions within Kodi.              -->
+<!--                                                                                      -->
+<!-- The format is:                                                                       -->
+<!--  <window>                                                                            -->
+<!--    <device>                                                                          -->
+<!--      <button>action</button>                                                         -->
+<!--    </device>                                                                         -->
+<!--  </window>                                                                           -->
+<!--                                                                                      -->
+<!-- The <global> section is a fall through - they will only be used if the button is     -->
+<!-- not used in the current window's section.                                            -->
+<!--                                                                                      -->
+<!-- Actions can be built-in functions.                                                   -->
+<!--  eg <B>ActivateWindow(Music)</B>                                                     -->
+<!-- would automatically go to Music on the press of the B button.                        -->
+<!--                                                                                      -->
+<!-- An empty action removes the corresponding mapping from default and parent keymaps.   -->
+<!-- This is different from a "noop" action, which disables a button.                     -->
+<!--                                                                                      -->
+<!-- More documentation on keymaps can be found on http://kodi.wiki/view/keymaps          -->
+<keymap>
+  <global>
+    <keyboard>
+      <record>Record</record>
+      <power>ShutDown()</power>
+	  <power mod="longpress">ActivateWindow(ShutdownMenu)</power><!--  new -->
+	  <home>ActivateWindow(Home)</home><!--  new -->
+	  <home mod="longpress">PlayerProcessInfo</home><!--  new -->
+    </keyboard>
+  </global>
+   <FileManager>
+    <keyboard>
+      <zero>Highlight</zero>
+    </keyboard>
+  </FileManager>
+  <FileBrowser>
+    <keyboard>
+      <zero>Highlight</zero>
+    </keyboard>
+  </FileBrowser>
+  <FullscreenVideo>
+    <keyboard>
+	  <i>Info</i><!--  new -->
+	  <i mod="longpress">PlayerDebug</i><!--  new -->
+      <backspace>stop</backspace>
+    </keyboard>
+  </FullscreenVideo>
+  <VirtualKeyboard>
+    <keyboard>
+	  <backspace>Backspace</backspace>
+    </keyboard>
+  </VirtualKeyboard>
+  <Programs>
+    <keyboard>
+      <i>info</i>
+    </keyboard>
+  </Programs>
+  <PlayerProcessInfo>
+    <keyboard>
+	  <home>Back</home>
+    </keyboard>
+  </PlayerProcessInfo>
+</keymap>

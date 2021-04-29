@@ -1,0 +1,17 @@
+<keymap>
+    <global>
+        <keyboard>
+            <key id="61489">codecinfo</key>
+            <key id="61495">AudioDelayMinus</key>
+            <key id="61497">AudioDelayPlus</key>
+            <key id="61493">stop</key>
+            <key id="61492">pause</key>
+            <key id="61491">fullscreen</key>
+            <key id="61490">info</key>
+            <key id="61952">runaddon(plugin.video.last_played)</key>
+	    <key id="61576">ActivateWindow(Home)</key>
+	    <key id="61524">ShutDown</key>
+	    <key id="61592">ActivateWindow(10004)</key>
+        </keyboard>
+    </global>
+</keymap>
